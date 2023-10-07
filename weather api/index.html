@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-------------css link--------------->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-------font awesome link--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div class="container_fluid weather">
+        <div class="container weather-container" id="abc">
+            <div class="weather-card">
+
+
+                <div class="search_bar">
+
+                    <div class="search">
+                        <input type="text" placeholder="Search for a city..." id="city">
+                    </div>
+                    <div class="search_glass">
+                        <button onclick="readData()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="weather-content">
+
+                    <div class="city-weather">
+                        <h1 id="head"></h1>
+                        <h1 id="temp"></h1>
+                        <br>
+                        <p id="feels"></p>
+                    </div>
+                    <div class="city-date">
+                        <h3 id="mon"></h3>
+                        <p id="tim"></p>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="wind">
+                    <h3><i class="fa-solid fa-wind"></i> Haze</h3>
+                    <p id="humid"></p>
+                    <p id="wind"></p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------js link---------------->
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
